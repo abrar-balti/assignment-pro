@@ -1,0 +1,19 @@
+#menu-item-dropdown::after {
+  content: "\25BC"; 
+  margin-left: 5px; 
+  font-size: 10px;
+}
+.user-icon{
+  color: grey;
+  padding-left: 10px;
+}
+
+/* Initially hide the dropdown menus */
+.dropdown-menu {
+  display: none;
+}
+
+/* Display the dropdown menus when hovering over the corresponding items */
+.group:hover .dropdown-menu {
+  display: block;
+}

@@ -1,12 +1,22 @@
+/* Initially, display the dropdown icon without rotation */
 #menu-item-dropdown::after {
-  content: "\25BC"; 
-  margin-left: 5px; 
+  content: "\25BC";
+  margin-left: 5px;
   font-size: 10px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
+
+/* Rotate the dropdown icon 180 degrees on hover */
+.group:hover #menu-item-dropdown::after {
+  transform: rotate(180deg);
+}
+
 .user-icon{
-  color: grey;
+  color: #cac6c6;
   padding-left: 10px;
+  font-size: 16px;
 }
+
 
 /* Initially hide the dropdown menus */
 .dropdown-menu {
@@ -16,4 +26,14 @@
 /* Display the dropdown menus when hovering over the corresponding items */
 .group:hover .dropdown-menu {
   display: block;
+}
+.dropdown-menu li {
+border-bottom: 1px  solid #b4b1b1;
+padding: 10px 0px;
+}
+.dropdown-menu li:last-child{
+  border: none;
+}
+.menu-items a:hover {
+  color: #2D96EE;
 }

@@ -1,0 +1,21 @@
+.mobile-menu ul li {
+  border-bottom: 1px solid #d4d4d4;
+  padding: 8px 0px;
+}
+.mobile-menu a {
+  display: flex;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #615e5e;
+}
+.mobile-menu a:hover{
+  color: #2D96EE;
+}
+.mobile-menu a img {
+  padding-right: 12px;
+}
+.humberger{
+  color: black;
+  font-size: 12px;
+}

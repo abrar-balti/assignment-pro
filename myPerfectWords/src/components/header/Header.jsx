@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <>
       {/* header main container */}
-      <div className="main-wrapper w-full  shadow">
+      <div className="main-wrapper w-full  shadow-lg fixed top-0 z-2 bg-white">
         {/* header-wrapper */}
-        <div className="header-container flex justify-between xl:justify-evenly items-center h-30 py-3 px-2">
+        <div className="header-container flex justify-between xl:justify-evenly items-center h-30 py-3 px-2 " >
           {/* logo div starts */}
           <div className="logo">
             <img

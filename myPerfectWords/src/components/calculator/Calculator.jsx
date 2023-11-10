@@ -53,7 +53,7 @@ const Calculator = () => {
   return (
     <>
       <div className=" right-[300px] calculator-wrapper md:w-[330px] py-3 rounded-md mr-6 md:mx-0">
-        <div className="main-calculator p-2 bg-white  shadow-2xl border rounded-md flex flex-col gap-1 text-sm mt-[-25px] mr-[-10px] px-3 py-3">
+        <div className="main-calculator p-2 bg-white  shadow-2xl border rounded-xl flex flex-col gap-1 text-sm mt-[-25px] mr-[-10px] px-6 py-6">
           <h3 className="bg-[#1176CA] text-white rounded-md text-center py-1 mb-4 font-semibold  ">
             50% Off On All Orders 🔥
             <br />
@@ -111,7 +111,7 @@ const Calculator = () => {
               +
             </div>
           </div>
-          <div className="total-price flex justify-between mt-2 iteme">
+          <div className="total-price flex justify-between mt-2 items-center">
             <h2 className="font-bold text-[#1176CA] ">Total Price</h2>
             <h1 className="text-black font-extrabold text-3xl">
               ${totalPrice}
@@ -119,7 +119,7 @@ const Calculator = () => {
           </div>
           <div className="btns flex justify-center my-3">
             <button
-              className=" text-white font-semibold border-blue-600 py-[8px] px-[28px] rounded-3xl bg-blue-600 hover:bg-blue-700"
+              className=" w-full text-white font-semibold border-blue-600 py-[10px] px-[28px] rounded-3xl bg-blue-600 hover:bg-blue-700 text-md"
               onClick={handleCalculatePrice}
             >
               Proceed To Order

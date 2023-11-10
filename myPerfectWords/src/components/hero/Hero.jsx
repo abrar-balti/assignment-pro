@@ -6,9 +6,9 @@ import Calculator from "../calculator/Calculator";
 const Hero = () => {
   return (
     <>
-      <div className="hero-wrapper flex-wrap w-full md:flex justify-around mt-5 py-8">
-        <div className="py-0 pr-0 hero-left md:w-[60%] md:py-8 md:pr-12 ">
-          <h3 className="text-blue-500 text-xl font-bold px-2 ">
+      <div className="hero-wrapper flex-wrap w-full md:flex justify-around mt-12 py-8 md:mt-[80px] ">
+        <div className="py-0 pr-0 hero-left md:w-[60%] md:py-8  md:pr-12 ">
+          <h3 className="text-blue-500 text-xl font-semibold px-2 ">
             Your Go-To Essay Writing Service for Top-Notch Papers!
           </h3>
           <h2 className="text-zinc-900 px-2 text-2xl md:text-5xl font-semibold py-8 md:leading-tight ">
@@ -30,14 +30,14 @@ const Hero = () => {
             </ul>
           </div>
 
-          <button className="ml-12 rounded md:ml-0 py-2 px-8 text-white text-lg font-semibold bg-blue-600 my-3 ">
+          <button className="ml-12 rounded md:ml-0 py-2 px-8 text-white text-lg font-semibold bg-blue-600 my-8 md:mt-8">
             Order Essay Now
           </button>
           <div className="hero-review flex flex-col ">
             <h2 className="font-bold text-xl my-4 mx-7 md:mx-0">
               Trusted by <span className="text-blue-600">30k+</span> Students
             </h2>
-            <div className="review-website flex mx-2 justify-between  w-[300px] py-4">
+            <div className="review-website flex px-2 md:mx-0 justify-between  w-[300px] py-4 items-center">
               <div className="w-[130px] sitejabber flex  justify-between items-center">
                 <div className="siteJabber-left flex">
                   <img
@@ -46,11 +46,29 @@ const Hero = () => {
                   />
                 </div>
                 <div className="sitejabber-right ">
-                  <span>4.6</span>
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
+                  <span className="px-1">4.6</span>
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+
                   <p>sitejabber</p>
                 </div>
               </div>
@@ -62,11 +80,27 @@ const Hero = () => {
                   />
                 </div>
                 <div className="sitejabber-right ">
-                  <span>4.6</span>
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
+                  <span className="px-1">4.6</span>
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className="text-[#FD8C04]"
+                    style={{ fontSize: "0.75em" }}
+                  />
                   <p>Reviews.io</p>
                 </div>
               </div>
@@ -74,9 +108,10 @@ const Hero = () => {
           </div>
         </div>
         {/* hero left ends here  */}
-        <div className="hero-right mt-12 ml-2">
+        <div className="hero-right mt-12 ml-2 md:mr-5">
           <Calculator />
         </div>
+        <hr className="border-t border-gray-300 w-[80%]" />
       </div>
     </>
   );
